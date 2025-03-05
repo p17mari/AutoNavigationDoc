@@ -1,6 +1,8 @@
 # AutoNavigationDoc  
+### Author: ARGIRO MARIOLI
+### GitHub Profile: [p17mari](https://github.com/p17mari)
 
-This repository provides a step-by-step guide on how to add a module that generates a grid listing all files in a folder, including clickable file links.  
+This repository provides a step-by-step guide on how to add a VBA module to a Word Document that generates a grid listing all files in a folder, including clickable file links.  
 
 ## Index  
 - [Requirements](#requirements)  
