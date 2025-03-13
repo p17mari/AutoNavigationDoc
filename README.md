@@ -7,7 +7,7 @@ This repository provides a step-by-step guide on how to add a VBA module to a Wo
 ## Index  
 - [Requirements](#requirements)  
 - [Steps to Insert a Grid with File Links](#steps-to-insert-a-grid-with-file-links)
-- [Manually add the visubal basic code](#manually-add-the-visual-basic-code)
+- [Manually add the visual basic code](#manually-add-the-visual-basic-code)
 - [Result](#result)  
 
 ---
@@ -33,7 +33,7 @@ Follow these steps to generate the navigation document without going over the VB
   - Click Run
   - Close Emerging window
 
-## Manually add the visubal basic code
+## Manually add the visual basic code
 Follow these steps to generate a navigation document:  
 
 ### 1. Create and Save a Word Document  
