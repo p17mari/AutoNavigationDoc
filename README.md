@@ -24,9 +24,9 @@ Before you begin, ensure you have:
 ### Run from Template
 Follow these steps to generate the navigation document without going over the VBA code
 
-1. Download docm file from repository [here](https://github.com/p17mari/AutoNavigationDoc/blob/main/Automatic%20Menu.docm)
-2. Put Word Document in the folder you want to create the menu for.
-3. Follow the instructions inside the document:
+### 1. Download docm file from repository [here](https://github.com/p17mari/AutoNavigationDoc/blob/main/Automatic%20Menu.docm)
+### 2. Put Word Document in the folder you want to create the menu for.
+### 3. Follow the instructions inside the document:
   - Enable Macros
   - Press the Alt + F8 keys
   - Select InsertFiles
