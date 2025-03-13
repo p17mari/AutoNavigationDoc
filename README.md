@@ -33,7 +33,7 @@ Follow these steps to generate the navigation document without going over the VB
   - Click Run
   - Close Emerging window
 
-### Manually add the visubal basic code
+## Manually add the visubal basic code
 Follow these steps to generate a navigation document:  
 
 ### 1. Create and Save a Word Document  
