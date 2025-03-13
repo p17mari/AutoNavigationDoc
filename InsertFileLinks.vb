@@ -27,13 +27,13 @@ Sub InsertFileLinks()
         Exit Sub
     End If
 
-    ' Get the folder object
+    ' Get the folder object to access its subfolders and files
     Set objFolder = objFSO.GetFolder(docPath)
 
     ' Insert a table with two columns (File Name | Link)
     Set rng = ActiveDocument.Range
     Set tbl = ActiveDocument.Tables.Add(rng, 1, 2) ' Start with one row, will add more dynamically
-    tbl.Borders.Enable = False ' Remove table borders for a cleaner look
+    tbl.Borders.Enable = True ' Add table borders for a cleaner look
     rowIndex = 1 ' Start at the first row
 
     ' Loop through each subfolder in the folder
@@ -50,7 +50,7 @@ Sub InsertFileLinks()
             tbl.Rows.Add
             rowIndex = rowIndex + 1
             fileName = objFSO.GetBaseName(objFile.Name) ' Get file name without extension
-            filePath = subFolder.Path & "\" & objFile.Name
+            filePath = subFolder.Path & "\" & objFile.Name ' Full file path
 
             ' Insert file name in the first column
             tbl.Cell(rowIndex, 1).Range.Text = fileName
@@ -66,7 +66,7 @@ Sub InsertFileLinks()
     ' Loop through each file in the main folder (not in subfolders)
     For Each objFile In objFolder.Files
         fileName = objFSO.GetBaseName(objFile.Name) ' Get file name without extension
-        filePath = objFile.Path
+        filePath = objFile.Path ' Full file path
 
         ' Insert new row
         tbl.Rows.Add
@@ -82,11 +82,12 @@ Sub InsertFileLinks()
             TextToDisplay:="Open"
     Next objFile
 
-    ' Clean up
+    ' Clean up by releasing the objects
     Set objFSO = Nothing
     Set objFolder = Nothing
     Set subFolder = Nothing
     Set rng = Nothing
 
+    ' Notify the user that the process is complete
     MsgBox "List of files has been inserted successfully!", vbInformation, "Done"
 End Sub
