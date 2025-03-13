@@ -6,7 +6,8 @@ This repository provides a step-by-step guide on how to add a VBA module to a Wo
 
 ## Index  
 - [Requirements](#requirements)  
-- [Steps to Insert a Grid with File Links](#steps-to-insert-a-grid-with-file-links)  
+- [Steps to Insert a Grid with File Links](#steps-to-insert-a-grid-with-file-links)
+- [Manually add the visubal basic code](#manually-add-the-visual-basic-code)
 - [Result](#result)  
 
 ---
@@ -20,7 +21,19 @@ Before you begin, ensure you have:
 ---
 
 ## Steps to Insert a Grid with File Links  
+### Run from Template
+Follow these steps to generate the navigation document without going over the VBA code
 
+1. Download docm file from repository [here](https://github.com/p17mari/AutoNavigationDoc/blob/main/Automatic%20Menu.docm)
+2. Put Word Document in the folder you want to create the menu for.
+3. Follow the instructions inside the document:
+  - Enable Macros
+  - Press the Alt + F8 keys
+  - Select InsertFiles
+  - Click Run
+  - Close Emerging window
+
+### Manually add the visubal basic code
 Follow these steps to generate a navigation document:  
 
 ### 1. Create and Save a Word Document  
