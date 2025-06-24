@@ -69,7 +69,8 @@ After running the macro, your document will contain a **grid with two columns**:
 
 > **Note:**  
 > - If a link is missing, the name belongs to a **folder**.  
-> - Files and folders are listed in **alphabetical order**.  
+> - Files and folders are listed in **alphabetical order**.
+> - RecuresiveFileListing recursively lists all files in a folder and its subfolders (no matter how deep)(unsorted)
 
 ---
 
